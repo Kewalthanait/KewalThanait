@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEJ-Task</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="main">
+     
+      <div class="banner">
+           TEJ application Project
+      </div>
+      <div class="section-1">
+          <p>Samosa</p>
+          
+          <span>Price: </span><input type="text" id="samosa_price">
+          
+          <br>
+          <span>Quantity: </span><button type="button" onclick="inc_samosa()">+</button>
+          <input type="text" class="qnt" id="qnt_samosa" value="0">
+          <button type="button" onclick="dec_samosa()">-</button>
+          <br>
+          <span>Total: </span><span id="s_total"></span>
+      </div>
+      
+      
+      
+      <div class="section-1">
+          <p>Tea</p>
+          
+          <span>Price: </span><input type="text" id="tea_price">
+          
+          <br>
+          <span>Quantity: </span><button type="button" onclick="inc_tea()">+</button>
+          <input type="text" size="1" id="qnt_tea" class="qnt" value="0">
+          <button type="button" onclick="dec_tea()">-</button>
+          <br>
+          <span>Total: </span><span id="t_total"></span>
+      </div>
+      
+      
+      <div class="section-1">
+          <p>Total Price: </p><span id="total"></span>
+          
+          <span>Vat(13%): </span><input type="text" class="vat" id="vat">
+          
+          <br>
+          <span>Tip(10%): </span> <input type="text" class="qnt" id="tip">
+          <br>
+      </div>
+      
+         <div class="grand">
+          <span>Grand Total : </span><span id="g_total" class="qnt"></span>
+          <br>
+       <button type="button" onclick="g_total()">Calculate grand total</button>
+          
+      </div>
+      
+      
+      
+      
+  </div>
+   
+    
+</body>
+</html>
